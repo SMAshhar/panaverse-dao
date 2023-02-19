@@ -14,6 +14,7 @@ const LogIn = () => (
 
   <Header />
   <Login />
+ 
   {/* Header */}
   {/* slide show */}
   {/* Catchy about us phrase */}
