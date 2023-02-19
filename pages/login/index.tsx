@@ -1,11 +1,12 @@
 import { VStack } from '@chakra-ui/react'
+import Footer from 'components/footer'
 import { Header } from 'components/header'
 import { Login } from 'components/login'
 
 
 const LogIn = () => (
  <VStack
-  height="100vh"
+  height="150vh"
   bg='black'
   width='full'
   overflow="hidden"
@@ -14,6 +15,7 @@ const LogIn = () => (
 
   <Header />
   <Login />
+  <Footer />
  
   {/* Header */}
   {/* slide show */}

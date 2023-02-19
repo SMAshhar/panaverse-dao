@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { Box, Text, Button, HStack, useColorMode, Image, Flex } from "@chakra-ui/react";
 // import Image from "next/image";
 
@@ -8,15 +8,23 @@ import { slides } from "./slide-data";
 export const Slideshow = () => {
   const [activeSlide, setActiveSlide] = useState(0);
 
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setActiveSlide(activeSlide => (activeSlide + 1) % slides.length);
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [slides]);
+
   const handleSlideClick = (index) => {
     setActiveSlide(index);
   };
 
   return (
 
-    <Flex width="full" align={'center'} height="600px"  flex={1} backgroundColor="rgba(0, 0, 0, 0.7)">
+    <Flex width="full" align={'center'} height="600px" flex={1} backgroundColor="rgba(0, 0, 0, 0.7)">
       <Box
-        
+        height={'full'}
         top={0}
         left={0}
         bottom={0}
@@ -27,6 +35,8 @@ export const Slideshow = () => {
         alignItems="center"
         padding="0 50px"
         backgroundColor="rgba(0, 0, 0, 0.7)"
+        transition="opacity 0.3s ease-in-out"
+      // opacity={activeSlide === previousSlide ? 0 : 1}
       // bg={colorMode === "light" ? "gray.100" : "gray.800"}
       // color={colorMode === "light" ? "black" : "gray.100"}
       >
@@ -39,6 +49,7 @@ export const Slideshow = () => {
         <HStack spacing={4} align='bottom' display={['none', 'flex']}>
           {slides.map((slide, index) => (
             <Button
+
               key={index}
               size="sm"
               variant="ghost"
@@ -47,6 +58,7 @@ export const Slideshow = () => {
               borderWidth={activeSlide === index ? 2 : 1}
               borderRadius={0}
               onClick={() => handleSlideClick(index)}
+              textColor="whiteAlpha.900"
             >
               {index + 1}
             </Button>
@@ -63,9 +75,10 @@ export const Slideshow = () => {
         placeContent={'normal'}
         // position={'relative'}
         backgroundColor="rgba(0, 0, 0, 0.7)"
+        transition={"opacity 0.3s ease-in-out"}
+      // opacity={activeSlide === previous? 1:0}
       >
         <Image
-
           src={slides[activeSlide].imageSrc}
           alt={slides[activeSlide].title}
           width={1300}

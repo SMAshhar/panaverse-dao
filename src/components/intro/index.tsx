@@ -42,13 +42,13 @@ export const Intro = () => {
     <Box
       position="relative"
       width="100%"
-      height="80vh" // Subtract header height
+      height="60vh" // Subtract header height
       overflow="hidden"
     >
       <Box position="absolute" top={0} left={0} right={0}>
         <Image display={['none', 'flex']} src='/image/gatesToElysium.jpg' alt='warmhole' w={'full'} />
       </Box>
-      <Box ref={foregroundRef} position="absolute" top={[0, -300]} left={[0,-150]} right={0}>
+      <Box ref={foregroundRef} position="absolute" top={[0, -350]} left={[0,-250]} right={0}>
         <Image src='/image/red-p-logo.png' alt='warmhole' />
       </Box> 
       <Box

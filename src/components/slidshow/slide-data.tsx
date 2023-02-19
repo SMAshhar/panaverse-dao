@@ -5,7 +5,7 @@ export const slides = [
         description: "Web 3.0 (Blockchain) and Metaverse Specialization",
       },
       {
-        imageSrc: "/image/AI.jpg",
+        imageSrc: "/image/AI1.jpg",
         title: "Join in the AI revolution.",
         description: "Artificial Intelligence (AI) and Deep Learning Specialization",
       },
