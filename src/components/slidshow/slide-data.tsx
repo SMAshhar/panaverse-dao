@@ -6,7 +6,7 @@ export const slides = [
       },
       {
         imageSrc: "/image/AI1.jpg",
-        title: "Join in the AI revolution.",
+        title: "Join the AI revolution.",
         description: "Artificial Intelligence (AI) and Deep Learning Specialization",
       },
       {

@@ -2,7 +2,7 @@ import { Flex, Box, Text, Image, Link, Heading } from "@chakra-ui/react";
 
 const Panel = ({ title, description, href }) => {
   return (
-    <Link href={href} _hover={{ transform: "translateY(-5px)" }}>
+    <Link href={href} _hover={{ transform: "translateY(-15px)" }}>
       <Box p={8} bg="gray.800" textColor={'whiteAlpha.900'} rounded="lg" boxShadow="lg">
         <Heading size="lg" mb={2}>
           {title}
@@ -43,7 +43,7 @@ export const Tiles = () => {
             description="This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences 
             for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized 
             distributed blockchains with 3D metaverse client experiences"
-            href="#"
+            href="/1"
           />
         </Box>
         <Box
@@ -54,7 +54,7 @@ export const Tiles = () => {
             description="The AI and Deep Learning Specialization is a foundational program that will aid in your comprehension of deep 
             learning's potential, difficulties, and effects as well as equip you to take part in the creation of cutting-edge AI technology.
             The AI and Deep Learning specialization focuses on building and deploying intelligent APIs"
-            href="#"
+            href="/2"
           />
         </Box>
         <Box
@@ -65,7 +65,7 @@ export const Tiles = () => {
             description="Cloud-native architecture and technologies are an approach to designing, constructing, and operating workloads 
             that are built in the cloud and take full advantage of the cloud computing model. Cloud-native technologies empower organizations 
             to build and run scalable applications in modern, dynamic environments such as public, private, and hybrid clouds."
-            href="#"
+            href="/3"
           />
         </Box>
         <Box
@@ -77,7 +77,7 @@ export const Tiles = () => {
             power into our everyday lives in a way that is embedded into our surroundings - invisible but useful. The Ambient Computing 
             and IoT Specialization focuses on building Smart Homes, Offices, Factories, and Cities using Voice computing, Matter Protocol, 
             and Embedded Devices."
-            href="#"
+            href="/4"
           />
         </Box>
         <Box
@@ -89,7 +89,7 @@ export const Tiles = () => {
             structured, functions, and has evolved; bioinformatics encompasses a diverse range of analytical methods and tools applied to 
             genomic data. This Specialization focuses on performing complex bioinformatics analysis using the most essential Python libraries
             and applications."
-            href="#"
+            href="/5"
           />
         </Box>
         <Box
@@ -100,7 +100,7 @@ export const Tiles = () => {
             description="More than ever, network engineers are finding it challenging to complete their duties entirely manually. Network 
             automation is now crucial due to new protocols, technologies, delivery models, and the requirement for enterprises to become more
             adaptable and agile. This course teaches network engineers how to automate systems with code using a variety of technologies."
-            href="#"
+            href="/6"
           />
         </Box>
       </Flex>
