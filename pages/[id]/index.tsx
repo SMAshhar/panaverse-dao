@@ -1,7 +1,8 @@
+
 import { Box, Container, Heading, Image, VStack, Button, Stack } from '@chakra-ui/react'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import { useRouter } from 'next/router'
-import { getContent, PageContent } from 'components/dynamicblock/data'
+import { getContent, PageContent } from 'components/dynamicblock'
 import { Header } from 'components/header'
 import Footer from 'components/footer'
 

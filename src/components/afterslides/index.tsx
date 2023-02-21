@@ -1,49 +1,80 @@
-import React from 'react'
-import { Flex, Text, Button, Link, VStack } from '@chakra-ui/react'
+import { VStack, Flex, Heading, Text, Image } from '@chakra-ui/react'
+import { StarIcon, MinusIcon } from '@chakra-ui/icons'
 
 export const AfterSlides = () => {
-    return (
-        <Flex
-            direction={'column'}
-            backgroundImage="url('/image/afterslide.jpg')"
-            backgroundPosition="center"
-            backgroundRepeat="no-repeat"
-            w='full'
-            height={1200}
-            alignItems='left'
-            justifyContent='center'
-        >
-            <Flex
-                direction={'column'}
-                w='40%'
-                px={20}
-                alignItems='left'
-                justifyContent={'left'}
-            >
-                <Text fontFamily={'fantasy'} letterSpacing='wide' fontSize={50} fontWeight='bold'>HOW DOES IT WORK... </Text>
-                <Text fontFamily={'fantasy'} letterSpacing='wide' fontSize={20} fontWeight='bold'>First three quarters are core quarters</Text>
+  return (
+    <VStack w="100%" >
+      <Flex
+        direction={{ base: 'column', md: 'row' }}
+        alignItems={'center'}
+        justifyContent="space-between"
+        alignContent={'center'}
+        w='full'
 
+      >
+        <Image src="/image/skill.png" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={'50%'} />
+        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} fontFamily='sans-serif' lineHeight={2} w={'45%'} m={2}  h={'max'} ml={'5%'}>
+          <Heading as="h2" size="4xl" mb={4}>
+            Do you have what it takes?
+          </Heading>
+          <Text fontFamily={'sans-serif'} fontSize={{ base: 'xl', md: '2xl' }} mt={{base:'15px', md:'25px'}}alignContent='center'>
+            <StarIcon /> Are you unhappy with how things are going in our country?
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <StarIcon /> Do you want your country to be leading the world?
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <StarIcon /> And become rich and an influencer in the process?
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <StarIcon /> Can you be consistent and self driven to get your wish?
+          </Text>
+          <Heading as="h2" size="lg" mt={4}>
+            Then follow us through the journey of becoming the biggest revolution Pakistan has seen since independance
+          </Heading>
+        </Flex>
+      </Flex>
 
-            </Flex>
-            <VStack alignItems={'left'} pt={40} px={40}>
-                <Text fontFamily={'fantasy'} letterSpacing='wide' fontSize={50} fontWeight='bold'>Do you have what it takes?</Text>
-                <Text fontFamily={'fantasy'} letterSpacing='wide' fontSize={20} fontWeight='bold'>Do you want to earn $$?</Text>
-                <Text fontFamily={'fantasy'} letterSpacing='wide' fontSize={20} fontWeight='bold'>Are you more inclined to be your own Boss?</Text>
-                <Text fontFamily={'fantasy'} letterSpacing='wide' fontSize={20} fontWeight='bold'>Can you use a keyboard?</Text>
-                <Text fontFamily={'fantasy'} letterSpacing='wide' fontSize={20} fontWeight='bold'>Can you be consistent in your efforts?</Text>
-            </VStack>
-            <Flex
-                w='full'
-                h={'full'}
-                justifyContent={'center'}
-                alignItems='center'
-            >
-                <Link href="/about" >
-                    <Button colorScheme={'blackAlpha'} size='lg' fontSize={50} p={20}>Click for more details</Button>
-                </Link>
-            </Flex>
+      <Flex
+        direction={{ base: 'column', md: 'row-reverse' }}
+        alignItems={'center'}
+        justifyContent="space-between"
+        w='full'
+        mr={15}
+        ml={15}
+      >
+        <Image src="/image/afterslide.jpg" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={'50%'} />
+        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} fontFamily='sans-serif' lineHeight={2} w={'40%'} m={2} justifyItems={'center'} h={'full'} ml={'7%'} alignContent={'center'}>
+          <Heading as="h2" size="4xl" mb={4} mt={4}>
+            Our road...
+          </Heading>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign='center'>
+            <StarIcon /> In the beginning, everyone will got through our three core quarters
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <StarIcon /> After the core quarters, select a specialization from the 6 fields:
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <MinusIcon />     1. Web 3 and Metaverse Specialization
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <MinusIcon />     2. Artificial Intelligence (AI) and Deep Learning Specialization
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <MinusIcon />     3. Cloud-Native Computing Specialization
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <MinusIcon />     4. Ambient Computing and IoT Specialization
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <MinusIcon />     5. Genomics and Bioinformatics Specialization
+          </Text>
+          <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
+            <MinusIcon />     6. Network Programmability and Automation Specialization
+          </Text>
 
         </Flex>
-
-    )
+      </Flex>
+    </VStack>
+  )
 }

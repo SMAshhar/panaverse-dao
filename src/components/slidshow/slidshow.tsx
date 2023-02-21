@@ -40,10 +40,10 @@ export const Slideshow = () => {
       // bg={colorMode === "light" ? "gray.100" : "gray.800"}
       // color={colorMode === "light" ? "black" : "gray.100"}
       >
-        <Text fontSize={["lg", '2xl', "3xl", "5xl"]} fontWeight="bold" color="white" mb={4} textAlign={['right', 'center']}>
+        <Text fontSize={["lg", '2xl', "3xl", "5xl"]} fontFamily='sans-serif' fontWeight="bold" color="white" mb={4} textAlign={['right', 'center']}>
           {slides[activeSlide].title}
         </Text>
-        <Text fontSize={["md", 'xl', "2xl", "3xl"]} color="white" mb={4} textAlign={['right', 'center']}>
+        <Text fontSize={["md", 'xl', "2xl", "3xl"]} color="white" mb={4} fontFamily='sans-serif' textAlign={['right', 'center']}>
           {slides[activeSlide].description}
         </Text>
         <HStack spacing={4} align='bottom' display={['none', 'flex']}>
