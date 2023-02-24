@@ -2,8 +2,8 @@ import { Flex, Box, Text, Image, Link, Heading } from "@chakra-ui/react";
 
 const Panel = ({ title, description, href }) => {
   return (
-    <Link href={href} _hover={{ transform: "translateY(-15px)" }}>
-      <Box p={8} bg="gray.800" textColor={'whiteAlpha.900'} rounded="lg" boxShadow="lg">
+    <Link href={href} _hover={{ transform: "translateY(-5px)" }}>
+      <Box p={8} bg="gray.800" textColor={'whiteAlpha.900'} rounded="lg" boxShadow="lg"_hover={{ transform: "scale(1.1, 1.1)" }} >
         <Heading size="lg" mb={2}>
           {title}
         </Heading>
@@ -37,7 +37,7 @@ export const Tiles = () => {
       >
         <Box
           w={{ base: "100%", md: "48%" }}
-          p={{ base: 2, md: 4 }}>
+          p={{ base: 2, md: 4 }} >
           <Panel
             title="Web 3.0 (Blockchain) and Metaverse Specialization"
             description="This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences 

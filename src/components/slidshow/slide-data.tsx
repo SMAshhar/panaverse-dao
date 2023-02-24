@@ -10,7 +10,7 @@ export const slides = [
         description: "Artificial Intelligence (AI) and Deep Learning Specialization",
       },
       {
-        imageSrc: "/image/CNC.jpg",
+        imageSrc: "/image/CNC1.jpg",
         title: "Be an expert on the new Cloud.",
         description: "Cloud-Native Computing Specialization",
       },

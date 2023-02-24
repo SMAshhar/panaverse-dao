@@ -52,11 +52,14 @@ export const Header = () => {
                     </HStack>
                     <Flex>
                         <Box display={{ base: "none", md: "flex" }} width={{ base: "auto", md: "auto" }} px={10} alignItems="center">
-                            <Link href="/signup">
-                                <Button as="a" variant="outline" colorScheme="cyan" ml={2}>Sign Up</Button>
+                            <Link href='https://www.piaic.org'>
+                                <Button as='a' variant={'ghost'} aria-label='piaic'> PIAIC Website</Button>
                             </Link>
+                            {/* <Link href="/signup">
+                                <Button as="a" variant="outline" colorScheme="cyan" ml={2}>Sign Up</Button>
+                            </Link> */}
                             <Link href="/login">
-                                <Button as="a" variant="outline" ml={2} href='/login' >Log In</Button>
+                                <Button as="a" variant="outline" ml={2} colorScheme="cyan" href='/login' >Log-In / Sign-up</Button>
                             </Link>
 
                         </Box>
@@ -107,7 +110,7 @@ export const Header = () => {
                                     <Link href="/">
                                         <Button as="a" variant="ghost" aria-label="Home">Home</Button>
                                     </Link>
-                                    <Link href="/admission">
+                                    <Link href="/login">
                                         <Button as="a" variant="ghost" aria-label="Admission">Admission</Button>
                                     </Link>
                                     <Link href="/about">
@@ -115,11 +118,14 @@ export const Header = () => {
                                     </Link>
                                 </VStack>
                                 <VStack width={{ base: "auto", md: "auto" }} px={10} alignItems="center">
-                                    <Link href="/signup">
-                                        <Button as="a" variant="outline" colorScheme="cyan" ml={2}>Sign Up</Button>
+                                    <Link href='https://piaic.org'>
+                                    <Button as="a" variant="ghost" aria-label="PIAIC">PIAIC</Button>
                                     </Link>
+                                    {/* <Link href="/login">
+                                        <Button as="a" variant="outline" colorScheme="cyan" ml={2}>Sign Up</Button>
+                                    </Link> */}
                                     <Link href="/login">
-                                        <Button as="a" variant="outline" ml={2} href='/login' >Log In</Button>
+                                        <Button as="a" variant="outline" ml={2} href='/login' >Log-In / Sign-up</Button>
                                     </Link>
                                 </VStack>
                             </Flex>

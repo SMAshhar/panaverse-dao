@@ -1,4 +1,4 @@
-import { VStack, Box } from '@chakra-ui/react'
+import { VStack, Box, Button } from '@chakra-ui/react'
 import { AfterSlides } from 'components/afterslides'
 import Footer from 'components/footer'
 import { Header } from 'components/header'
@@ -23,15 +23,15 @@ const IndexPage = () => (
         <AfterSlides />
         <Tiles />
         <Footer />
-        
+
 
 
         {/* Header DONE*/}
         {/* Intro DONE */}
         {/* slide show DONE*/}
-        {/* Catchy about us phrase */}
-        {/* tiles */}
-        {/* footer */}
+        {/* Catchy about us phrase DONE */}
+        {/* tiles DONE*/}
+        {/* footer DONE*/}
 
 
 

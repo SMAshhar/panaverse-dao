@@ -1,4 +1,4 @@
-import { VStack, Flex, Heading, Text, Image } from '@chakra-ui/react'
+import { VStack, Flex, Heading, Text, Image, Button, Link } from '@chakra-ui/react'
 import { StarIcon, MinusIcon } from '@chakra-ui/icons'
 
 export const AfterSlides = () => {
@@ -12,12 +12,12 @@ export const AfterSlides = () => {
         w='full'
 
       >
-        <Image src="/image/skill.png" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={'50%'} />
-        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} fontFamily='sans-serif' lineHeight={2} w={'45%'} m={2}  h={'max'} ml={'5%'}>
+        <Image src="/image/skill.png" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={['100%', '75%', '50%']} />
+        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} fontFamily='sans-serif' textColor={'whiteAlpha'} lineHeight={2} w={['90%', '75%', '40%']} m={2} h={'max'} ml={'5%'} mr='5%'>
           <Heading as="h2" size="4xl" mb={4}>
             Do you have what it takes?
           </Heading>
-          <Text fontFamily={'sans-serif'} fontSize={{ base: 'xl', md: '2xl' }} mt={{base:'15px', md:'25px'}}alignContent='center'>
+          <Text fontFamily={'sans-serif'} fontSize={{ base: 'xl', md: '2xl' }} mt={{ base: '15px', md: '25px' }} alignContent='center'>
             <StarIcon /> Are you unhappy with how things are going in our country?
           </Text>
           <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
@@ -43,13 +43,13 @@ export const AfterSlides = () => {
         mr={15}
         ml={15}
       >
-        <Image src="/image/afterslide.jpg" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={'50%'} />
-        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} fontFamily='sans-serif' lineHeight={2} w={'40%'} m={2} justifyItems={'center'} h={'full'} ml={'7%'} alignContent={'center'}>
+        <Image src="/image/afterslide.jpg" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={['100%', '75%', '50%']} />
+        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} textColor={'whiteAlpha'} fontFamily='sans-serif' lineHeight={2} w={['90%', '75%', '40%']} m={2} justifyItems={'center'} h={'full'} ml={'7%'} alignContent={'center'}>
           <Heading as="h2" size="4xl" mb={4} mt={4}>
-            Our road...
+            Our path...
           </Heading>
           <Text fontSize={{ base: 'xl', md: '2xl' }} textAlign='center'>
-            <StarIcon /> In the beginning, everyone will got through our three core quarters
+            <StarIcon /> Everyone is to start with our three core quarters
           </Text>
           <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
             <StarIcon /> After the core quarters, select a specialization from the 6 fields:
@@ -72,9 +72,13 @@ export const AfterSlides = () => {
           <Text fontSize={{ base: 'xl', md: '2xl' }} alignContent='center'>
             <MinusIcon />     6. Network Programmability and Automation Specialization
           </Text>
-
+          <Link href='/about' fontSize={{ base: 'xl', md: '2xl' }} alignContent='center' textColor={'blue.500'}>
+            Click for more details
+          </Link>
         </Flex>
+
       </Flex>
     </VStack>
   )
 }
+

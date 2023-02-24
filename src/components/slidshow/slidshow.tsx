@@ -1,5 +1,5 @@
-import { useState, useEffect} from "react";
-import { Box, Text, Button, HStack, useColorMode, Image, Flex } from "@chakra-ui/react";
+import { useState, useEffect } from "react";
+import { Box, Text, Button, HStack, useColorMode, Image, Flex, Fade } from "@chakra-ui/react";
 // import Image from "next/image";
 
 
@@ -22,20 +22,20 @@ export const Slideshow = () => {
 
   return (
 
-    <Flex width="full" align={'center'} height="600px" flex={1} backgroundColor="rgba(0, 0, 0, 0.7)">
+    <Flex direction={['column','column', 'row']} width="full" align={'center'} height="600px" flex={1} backgroundColor="rgba(0, 0, 0, 0.7)" border={'8px'} borderStyle={'groove'} borderColor='black'>
       <Box
         height={'full'}
         top={0}
         left={0}
         bottom={0}
-        width="40%"
+        width={["90%","70%","40%"]}
         display="flex"
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
         padding="0 50px"
         backgroundColor="rgba(0, 0, 0, 0.7)"
-        transition="opacity 0.3s ease-in-out"
+      
       // opacity={activeSlide === previousSlide ? 0 : 1}
       // bg={colorMode === "light" ? "gray.100" : "gray.800"}
       // color={colorMode === "light" ? "black" : "gray.100"}
@@ -43,7 +43,7 @@ export const Slideshow = () => {
         <Text fontSize={["lg", '2xl', "3xl", "5xl"]} fontFamily='sans-serif' fontWeight="bold" color="white" mb={4} textAlign={['right', 'center']}>
           {slides[activeSlide].title}
         </Text>
-        <Text fontSize={["md", 'xl', "2xl", "3xl"]} color="white" mb={4} fontFamily='sans-serif' textAlign={['right', 'center']}>
+        <Text fontSize={["md", 'xl', "2xl", "3xl"]} color="white" mb={4} fontFamily='sans-serif' textAlign={['left','left', 'center']}>
           {slides[activeSlide].description}
         </Text>
         <HStack spacing={4} align='bottom' display={['none', 'flex']}>
@@ -67,9 +67,10 @@ export const Slideshow = () => {
       </Box>
       {/* Display active slide */}
       <Box
-        display={['none', 'block']}
+
+        display={ 'block'}
         top={0} right={0} bottom={0}
-        width="60%"
+        width={["100%","80%","60%"]}
         p={8}
         // objectFit='fill'
         placeContent={'normal'}
@@ -84,6 +85,12 @@ export const Slideshow = () => {
           width={1300}
           height={600}
           objectFit="cover"
+          // transition="opacity 0.3s ease-in-out"
+          // transitionProperty='all'
+          // transitionDuration="normal"
+          // _hover={{
+          //   transform: 'scale(1.1,1.1)'
+          // }}
         />
       </Box>
 

@@ -45,10 +45,13 @@ export const Intro = () => {
       height="60vh" // Subtract header height
       overflow="hidden"
     >
+      <Box display={['none','none', 'none' ]} position="absolute" top={[0, -350]} left={[0,-250]} right={0}>
+        <Image src='/image/red-p-logo.png' alt='warmhole' />
+      </Box> 
       <Box position="absolute" top={0} left={0} right={0}>
-        <Image display={['none', 'flex']} src='/image/gatesToElysium.jpg' alt='warmhole' w={'full'} />
+        <Image src='/image/gatesToElysium.jpg' alt='warmhole' w={'full'} />
       </Box>
-      <Box ref={foregroundRef} position="absolute" top={[0, -350]} left={[0,-250]} right={0}>
+      <Box ref={foregroundRef} display={['none','none', 'flex' ]} position="absolute" top={[0, -350]} left={[0,-250]} right={0}>
         <Image src='/image/red-p-logo.png' alt='warmhole' />
       </Box> 
       <Box

@@ -1,5 +1,5 @@
-import { VStack, Flex, Heading, Input, Button, useColorMode, useColorModeValue } from '@chakra-ui/react'
-import { Header } from 'components/header'
+import { VStack, Flex, Heading, Input, Button, useColorMode, useColorModeValue, Link } from '@chakra-ui/react'
+import { Header  } from 'components/header'
 import { useState } from 'react'
 
 export const Login = () => {
@@ -22,7 +22,7 @@ export const Login = () => {
         >
             
             <Flex
-                height='60vh'
+                height='80vh'
                 alignItems={'center'}
                 justifyContent='center'
             >
@@ -35,7 +35,7 @@ export const Login = () => {
                         <Input placeholder='NIC' variant={'filled'} mb={3} value={nic} onChange={(e) => setNic(e.target.value)} />
                     )}
                     <Button mb={6} colorScheme={colorMode === 'light' ? 'blackAlpha' : 'whiteAlpha'}>{buttonText}</Button>
-                    <Button onClick={handleButtonClick}>{isSignup ? 'login' : 'signup'}</Button>
+                    <Link onClick={handleButtonClick} textColor='blue.500'>{isSignup ? 'login' : 'signup'}</Link>
 
                 </Flex>
 
