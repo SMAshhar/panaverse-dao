@@ -1,8 +1,7 @@
 import React from 'react'
 import { HStack, Box, Button, Link, Flex, useColorMode, VStack, IconButton } from '@chakra-ui/react'
-import { SunIcon, MoonIcon } from '@chakra-ui/icons'
+import { SunIcon, MoonIcon, HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 import { useState, useEffect } from 'react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
 
 export const Header = () => {
     const [isMounted, setIsMounted] = useState(false)
@@ -42,7 +41,7 @@ export const Header = () => {
                             <Link href="/">
                                 <Button as="a" variant="ghost" aria-label="Home">Home</Button>
                             </Link>
-                            <Link href="/admission">
+                            <Link href="/login">
                                 <Button as="a" variant="ghost" aria-label="Admission">Admission</Button>
                             </Link>
                             <Link href="/about">
@@ -53,7 +52,7 @@ export const Header = () => {
                     <Flex>
                         <Box display={{ base: "none", md: "flex" }} width={{ base: "auto", md: "auto" }} px={10} alignItems="center">
                             <Link href='https://www.piaic.org'>
-                                <Button as='a' variant={'ghost'} aria-label='piaic'> PIAIC Website</Button>
+                                <Button as='a' variant={'ghost'} aria-label='piaic'> PIAIC</Button>
                             </Link>
                             {/* <Link href="/signup">
                                 <Button as="a" variant="outline" colorScheme="cyan" ml={2}>Sign Up</Button>
@@ -119,7 +118,7 @@ export const Header = () => {
                                 </VStack>
                                 <VStack width={{ base: "auto", md: "auto" }} px={10} alignItems="center">
                                     <Link href='https://piaic.org'>
-                                    <Button as="a" variant="ghost" aria-label="PIAIC">PIAIC</Button>
+                                        <Button as="a" variant="ghost" aria-label="PIAIC">PIAIC</Button>
                                     </Link>
                                     {/* <Link href="/login">
                                         <Button as="a" variant="outline" colorScheme="cyan" ml={2}>Sign Up</Button>

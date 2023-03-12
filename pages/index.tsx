@@ -16,7 +16,7 @@ const IndexPage = () => (
         overflow="hidden"
         spacing={0}
     >
-
+<title>panaverse</title>
         <Header />
         <Intro />
         <Slideshow />

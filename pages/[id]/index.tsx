@@ -17,20 +17,21 @@ export default function Page() {
 
     return (
         <>
+        <title>{page.heading}</title>
             <Header />
             <VStack align={'center'} w='full'>
                 <Image src={page.image} />
             </VStack>
-            <Box py="20" alignContent={'center'}>
+            <Box py={["10","20" ]}alignContent={'center'}>
                 <Container maxW="container.lg">
-                    <Heading as="h1" mb="6" fontSize={[50, 70]}>
+                    <Heading as="h1" mb="6" fontSize={[30, 70]}>
                         {page.heading}
                     </Heading>
-                    <Box fontSize={[10, 20]} py={5}>{page.description}</Box>
-                    <Heading pt={20}>Quarter IV</Heading>
-                    <Box fontSize={[10, 20]} py={5}>{page.outline}</Box>
-                    <Heading pt={20}>Quarter V</Heading>
-                    <Box fontSize={[10, 20]} py={5}>{page.outline1}</Box>
+                    <Box fontSize={[15, 25]} py={5}>{page.description}</Box>
+                    <Heading pt={[10,20]}>Quarter IV</Heading>
+                    <Box fontSize={[15, 25]} py={5}>{page.outline}</Box>
+                    <Heading pt={[10,20]}>Quarter V</Heading>
+                    <Box fontSize={[15, 25]} py={5}>{page.outline1}</Box>
                 </Container>
                 <Stack align={'center'} py={20}>
                     <Button onClick={(() => router.push(`https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing`))}>Click for more details</Button>

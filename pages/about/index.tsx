@@ -7,18 +7,19 @@ import Footer from 'components/footer'
 export default function About() {
     return (
         <Box>
+            <title>Core Qs</title>
             <Header />
             <Box
                 position="relative"
                 width="full"
-                height="60vh" // Subtract header height
+                height={["40vh","60vh"]} // Subtract header height
                 overflow="hidden"
             >
                 <Box position="absolute" top={0} left={0} right={0}>
-                    <Image display={['none', 'flex']} src='/image/starting.jpg' alt='warmhole' w={'full'} />
+                    <Image display={['flex', 'flex']} src='/image/starting.jpg' alt='warmhole' w={'full'} />
                 </Box>
                 <Box
-                    position="absolute"
+                    position={["absolute"]}
                     top="50%"
                     left="50%"
                     transform="translate(-50%, -50%)"

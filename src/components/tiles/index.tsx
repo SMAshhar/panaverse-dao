@@ -3,7 +3,7 @@ import { Flex, Box, Text, Image, Link, Heading } from "@chakra-ui/react";
 const Panel = ({ title, description, href }) => {
   return (
     <Link href={href} _hover={{ transform: "translateY(-5px)" }}>
-      <Box p={8} bg="gray.800" textColor={'whiteAlpha.900'} rounded="lg" boxShadow="lg"_hover={{ transform: "scale(1.1, 1.1)" }} >
+      <Box p={8} bg="gray.800" textColor={'whiteAlpha.900'} rounded="lg" boxShadow="lg"_hover={{ transform: "scale(1.02, 1.02)" }} >
         <Heading size="lg" mb={2}>
           {title}
         </Heading>

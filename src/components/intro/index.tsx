@@ -42,12 +42,12 @@ export const Intro = () => {
     <Box
       position="relative"
       width="100%"
-      height="60vh" // Subtract header height
+      height={["40vh","60vh"]} // Subtract header height
       overflow="hidden"
     >
-      <Box display={['none','none', 'none' ]} position="absolute" top={[0, -350]} left={[0,-250]} right={0}>
+      {/* <Box display={['none','none', 'none' ]} position="absolute" top={[0, -350]} left={[0,-250]} right={0}>
         <Image src='/image/red-p-logo.png' alt='warmhole' />
-      </Box> 
+      </Box>  */}
       <Box position="absolute" top={0} left={0} right={0}>
         <Image src='/image/gatesToElysium.jpg' alt='warmhole' w={'full'} />
       </Box>
@@ -55,13 +55,13 @@ export const Intro = () => {
         <Image src='/image/red-p-logo.png' alt='warmhole' />
       </Box> 
       <Box
-        position="absolute"
-        top="50%"
-        left="50%"
+        position={["relative","absolute"]}
+        top={["40%","50%"]}
+        left={["50%","50%"]}
         transform="translate(-50%, -50%)"
         textAlign="center"
       >
-        <Text ref={titleRef} textAlign={{base:'left', md:'center' }} fontSize="6xl" fontWeight="bold" mb={4} textColor='whiteAlpha.900'>
+        <Text ref={titleRef} textAlign={'center'} fontSize={["3xl","6xl"]} fontWeight="bold" mb={4} textColor='whiteAlpha.900'>
           Welcome to the Panaverse DAO
         </Text>
         <Text ref={descriptionRef} fontSize="xl" fontWeight="bold" textColor='whiteAlpha.900'>

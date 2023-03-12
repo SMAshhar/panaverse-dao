@@ -2,7 +2,7 @@ import { Heading, Stack, VStack, Text, Image, Link, Button } from '@chakra-ui/re
 
 export const Start = () => {
     return (
-        <VStack w='full'>
+        <VStack maxW={['container.lg', 'full']}>
             <VStack align={'center'} w={'70%'}>
                 <Heading fontSize={['2xl', '4xl', '6xl', '8xl']} w='full'> Core Quarters </Heading>
                 <Heading fontSize={['xl', '3xl', '5xl', '6xl']} w='full'>Quarter I</Heading>
@@ -63,7 +63,7 @@ export const Start = () => {
                     </Stack>
                 </VStack>
                 
-                <Link mt={'50px'} href='https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing'>
+                <Link mt={'50px'} p={'20px'} href='https://docs.google.com/document/d/13Z4tMKQmZpMEsOc1Y_qAXbOstRolGIFupHxQFgAFl98/edit?usp=sharing'>
                     <Button>Click for more details</Button>
                 </Link>
                 

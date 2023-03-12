@@ -2,12 +2,12 @@ export const slides = [
     {
         imageSrc: "/image/Meta.jpg",
         title: "Design the new internet.",
-        description: "Web 3.0 (Blockchain) and Metaverse Specialization",
+        description: "Web 3.0 (Blockchain) and Metaverse",
       },
       {
         imageSrc: "/image/AI1.jpg",
         title: "Join the AI revolution.",
-        description: "Artificial Intelligence (AI) and Deep Learning Specialization",
+        description: "Artificial Intelligence (AI) and Deep Learning",
       },
       {
         imageSrc: "/image/CNC1.jpg",
@@ -27,6 +27,6 @@ export const slides = [
       {
         imageSrc: "/image/NA.jpg",
         title: "Network without Networking.",
-        description: "Network Programmability and Automation Specialization",
+        description: "Network Programmability and Automation",
       },
 ]

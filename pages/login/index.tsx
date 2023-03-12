@@ -12,6 +12,7 @@ const LogIn = () => (
   overflow="hidden"
   spacing={0}
  >
+    <title>Login/Signup</title>
 
   <Header />
   <Login />

@@ -8,6 +8,7 @@ import Footer from 'components/footer'
 export default function Starting() {
     return (
         <Stack>
+            <title>Core Qs</title>
             <Header />
             <Start />
             <Footer />
