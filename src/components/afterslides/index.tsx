@@ -13,7 +13,7 @@ export const AfterSlides = () => {
 
       >
         <Image src="/image/skill.png" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={['100%', '75%', '50%']} />
-        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} fontFamily='sans-serif' textColor={'whiteAlpha'} lineHeight={2} w={['90%', '75%', '40%']} m={2} h={'max'} ml={'5%'} mr='5%'>
+        <Flex direction="column" alignItems={'flex-start'} fontFamily='sans-serif' textColor={'whiteAlpha'} lineHeight={2} w={['90%', '75%', '40%']} m={2} h={'max'} ml={'5%'} mr='5%'>
           <Heading as="h2" size={["xl","4xl"]} mb={4}>
             Do you have what it takes?
           </Heading>
@@ -44,11 +44,11 @@ export const AfterSlides = () => {
         ml={15}
       >
         <Image src="/image/afterslide.jpg" boxSize={{ base: '100%', md: '50%' }} objectFit="fill" w={['100%', '75%', '50%']} />
-        <Flex direction="column" alignItems={{ base: 'center', md: 'flex-start' }} textColor={'whiteAlpha'} fontFamily='sans-serif' lineHeight={2} w={['90%', '75%', '40%']} m={2} justifyItems={'center'} h={'full'} ml={'7%'} alignContent={'center'}>
+        <Flex direction="column" alignItems={'flex-start' } textColor={'whiteAlpha'} fontFamily='sans-serif' lineHeight={2} w={['90%', '75%', '40%']} m={2} justifyItems={'center'} h={'full'} ml={'7%'} alignContent={'center'}>
           <Heading as="h2" size={["xl","4xl"]} mb={4} mt={4}>
             Our path...
           </Heading>
-          <Text fontSize={{ base: 'md', md: '2xl' }} alignContent='center'>
+          <Text fontSize={{ base: 'md', md: '2xl' }} alignContent='left'>
             <StarIcon /> Everyone is to start with our three core quarters
           </Text>
           <Text fontSize={{ base: 'md', md: '2xl' }} alignContent='center'>

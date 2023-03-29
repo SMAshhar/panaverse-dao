@@ -22,7 +22,7 @@ export const Slideshow = () => {
 
   return (
 
-    <Flex direction={['column','column', 'row']} width="full" align={'center'} height={["200px","600px"]} flex={1} backgroundColor="rgba(0, 0, 0, 0.7)" border={['2px','8px']} borderStyle={'groove'} borderColor='black'>
+    <Flex direction={['column','column', 'row']} width="full" align={'center'} height={["200px","600px"]} flex={1} backgroundColor="rgba(0, 0, 0, 0.7)" mb={2} mt={2}>
       <Box
         height={'full'}
         top={0}
@@ -71,7 +71,7 @@ export const Slideshow = () => {
         display={ 'block'}
         top={0} right={0} bottom={0}
         width={["100%","80%","60%"]}
-        p={8}
+        // p={8}
         // objectFit='fill'
         placeContent={'normal'}
         // position={'relative'}

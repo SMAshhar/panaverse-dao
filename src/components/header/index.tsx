@@ -30,7 +30,7 @@ export const Header = () => {
                         bg={colorMode === "light" ? "gray.100" : "gray.800"}
                         color={colorMode === "light" ? "black" : "gray.100"}
                     >
-                        <Box p={16}>
+                        <Box p={{base:8, md:16}}>
                             <Link href="/">
                                 <a>
                                     <img src="/image/panaverse80_80.png" alt="Logo" width={40} />
@@ -60,7 +60,6 @@ export const Header = () => {
                             <Link href="/login">
                                 <Button as="a" variant="outline" ml={2} colorScheme="cyan" href='/login' >Log-In / Sign-up</Button>
                             </Link>
-
                         </Box>
                         <Flex align='center'>
                             <IconButton

@@ -3,7 +3,7 @@ import { Heading, Stack, VStack, Text, Image, Link, Button } from '@chakra-ui/re
 export const Start = () => {
     return (
         <VStack maxW={['container.lg', 'full']}>
-            <VStack align={'center'} w={'70%'}>
+            <VStack align={'center'} w={['90%','70%']}>
                 <Heading fontSize={['2xl', '4xl', '6xl', '8xl']} w='full'> Core Quarters </Heading>
                 <Heading fontSize={['xl', '3xl', '5xl', '6xl']} w='full'>Quarter I</Heading>
                 <Heading fontSize={['lg', '2xl', '4xl', '6xl']} w='full'>CS-101: Object-Oriented Programming using TypeScript</Heading>
@@ -25,7 +25,7 @@ export const Start = () => {
                 </Stack>
             </VStack>
             <Image src='/image/about.jpg' w={'full'} />
-            <VStack align={'center'} w={'70%'}>
+            <VStack align={'center'} w={['90%','70%']}>
                 <Heading fontSize={['xl', '3xl', '5xl', '6xl']} w='full'>Quarter II</Heading>
                 <Heading fontSize={['lg', '2xl', '4xl', '6xl']} w='full'>W2-201: Developing Planet-Scale Web 2.0 Serverless Cloud Apps and APIs using Next.js 13 and Cloud Development Kit (CDK) for Terraform</Heading>
                 <Text fontSize={['sm', 'lg', '2xl', '4xl']}>Duration 13 weeks</Text>
@@ -49,7 +49,7 @@ export const Start = () => {
                 </Stack>
             </VStack>
             <Image src='/image/about.jpg' w={'full'} />
-            <VStack align={'center'} w={'70%'} pb='100px'>
+            <VStack align={'center'} w={['90%','70%']} pb='100px'>
                 <VStack>
                     <Heading fontSize={['xl', '3xl', '5xl', '6xl']} w='full'>Quarter III</Heading>
                     <Heading fontSize={['lg', '2xl', '4xl', '6xl']}>$-101: Dollar Making Bootcamp - Full-Stack Template and API Product Development</Heading>

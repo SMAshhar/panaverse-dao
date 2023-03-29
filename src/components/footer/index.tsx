@@ -26,7 +26,7 @@ const Footer = () => {
                 <Image src="/image/red-p-logo-text_dao.png" alt="Logo" width={260} height={48} />
             </NextLink>
 
-            <HStack spacing={8} mt={8}>
+            <HStack spacing={8} mt={4}>
                 <HStack spacing={2}>
                     <Icon as={FaEnvelope} color={iconColor} />
                     <Link href="mailto:education@piaic.org" color={linkColor}>
@@ -44,7 +44,7 @@ const Footer = () => {
                 </HStack>
             </HStack>
 
-            <HStack spacing={2} mt={8}>
+            <HStack spacing={2} mt={4}>
                 <Link href="https://github.com/panaverse" isExternal>
                     <Icon as={IoLogoGithub} boxSize={6} color={iconColor} />
                 </Link>
@@ -63,7 +63,7 @@ const Footer = () => {
             </HStack>
             </HStack>
 
-            <Text mt={8} fontSize="sm" color={textColor} textAlign="center">
+            <Text mt={4} fontSize="sm" color={textColor} textAlign="center">
                 &copy; 2023 Example Company. All rights reserved.
             </Text>
         </Flex>
